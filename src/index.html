@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookbook</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./index.js" defer></script>
+  </head>
+  <body class="border-box max-w-7xl md:mx-auto font-Roboto">
+    <nav class="flex justify-between items-center px-[1.5rem] py-[2rem]">
+      <ul
+        id="menuList"
+        class="absolute z-[100] top-0 left-0 w-[100vw] h-[100vh] bg-white flex flex-col pl-[1.5rem] pt-[4rem] gap-y-6 text-sm uppercase leading-4 tracking-widest translate-x-[-9500px]"
+      >
+        <div
+          id="closeBtn"
+          class="absolute right-[1.5rem] top-[1.5rem] cursor-pointer"
+        >
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <li class="relative">
+          <a class="opacity-0 animate-fade" href="#">recipes</a>
+        </li>
+        <li class="relative">
+          <a class="opacity-0 animate-fade-1" href="#">product</a>
+        </li>
+        <li class="relative">
+          <a class="opacity-0 animate-fade-2" href="#">inspiration</a>
+        </li>
+        <li class="relative">
+          <a class="opacity-0 animate-fade-3" href="#">shop</a>
+        </li>
+      </ul>
+      <div class="hidden lg:flex">
+        <ul
+          class="flex items-center gap-x-6 text-sm uppercase leading-4 tracking-widest"
+        >
+          <li class="relative">
+            <a
+              class="hover:font-bold hover:duration-500 transition-all ease-in-out after:content-[''] after:absolute after:bg-red-400 after:w-[0%] after:h-[1px] after:left-0 after:-bottom-[8px] hover:after:w-[100%] hover:after:duration-500"
+              href="#"
+              >recipes</a
+            >
+          </li>
+          <li class="relative">
+            <a
+              class="hover:font-bold hover:duration-500 transition-all ease-in-out after:content-[''] after:absolute after:bg-red-400 after:w-[0%] after:h-[1px] after:left-0 after:-bottom-[8px] hover:after:w-[100%] hover:after:duration-500"
+              href="#"
+              >product</a
+            >
+          </li>
+          <li class="relative">
+            <a
+              class="hover:font-bold hover:duration-500 transition-all ease-in-out after:content-[''] after:absolute after:bg-red-400 after:w-[0%] after:h-[1px] after:left-0 after:-bottom-[8px] hover:after:w-[100%] hover:after:duration-500"
+              href="#"
+              >inspiration</a
+            >
+          </li>
+          <li class="relative">
+            <a
+              class="hover:font-bold hover:duration-500 transition-all ease-in-out after:content-[''] after:absolute after:bg-red-400 after:w-[0%] after:h-[1px] after:left-0 after:-bottom-[8px] hover:after:w-[100%] hover:after:duration-500"
+              href="#"
+              >shop</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div
+        id="menu"
+        class="text-xl flex justify-content-center items-center w-5 h-5 text-black lg:hidden"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div
+        class="flex justify-content-center items-center cursor-pointer w-[100px] h-[50px] md:w-[150] md:h-[80px] lg:w-[200] lg:h-[100]"
+      >
+        <img class="w-full h-full" src="../assets/Logo.svg" alt="Logo" />
+      </div>
+      <div
+        class="flex gap-x-[0.8rem] lg:w-[350px] hover:gap-x-[1rem] duration-500 transition-all ease-in-out"
+      >
+        <div class="cursor-pointer opacity-[0.75]">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div
+          class="hidden w-[100%] relative lg:block after:content-[''] after:absolute after:bg-red-400 after:w-[0%] after:h-[1px] after:left-0 after:-bottom-[8px] hover:after:w-[75%] hover:after:duration-500"
+        >
+          <input
+            class="w-[100%] flex-1 text-ellipsis"
+            type="text"
+            placeholder="Search for recipes, products etc..."
+          />
+        </div>
+      </div>
+    </nav>
+    <div class="relative z-10 h-[60vh] text-center">
+      <div
+        class="bg-black absolute top-0 left-0 opacity-[0.35] z-[-6] h-full w-full"
+      ></div>
+      <img
+        class="absolute top-0 left-0 -z-10 h-full w-full object-cover"
+        src="../assets/hero-bg.png"
+        alt="Hero"
+      />
+      <div class="flex flex-col h-full justify-center gap-y-[4.5rem]">
+        <div>
+          <h1
+            class="text-[3rem] text-white z-10 font-Fugaz font-bold leading-[50px] md:text-[4.5rem] md:leading-[70px]"
+          >
+            With Love
+          </h1>
+          <h2
+            class="font-Cedarville text-[3rem] text-[#EFDBB2] leading-[30px] md:text-[4.5rem] md:leading-[50px]"
+          >
+            baked
+          </h2>
+        </div>
+        <div>
+          <button
+            class="bg-[#EFDBB2] px-[3rem] py-[0.6rem] rounded-[100px] border border-solid border-white tracking-widest shadow-sm uppercase"
+          >
+            Discover Recipes
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="text-center px-[1.5rem] py-[3rem] flex flex-col gap-y-[1.5rem]">
+      <h1
+        class="font-Roboto text-[1.8rem] font-bold leading-[35px] mx-auto max-w-[33.75rem] md:mx-auto"
+      >
+        Delicious recipe ideas for young and old
+      </h1>
+      <p class="max-w-[33.75rem] mx-auto md:mx-auto md:text-[1.25rem]">
+        Baking & enjoying is our passion! That's why we're constantly developing
+        new recipes for every occasion, improving our products and providing
+        help and advice. Let our ideas inspire you!
+      </p>
+    </div>
+  </body>
+</html>
