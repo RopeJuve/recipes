@@ -15,7 +15,7 @@
     <script src="./index.js" defer></script>
   </head>
   <body class="border-box max-w-7xl md:mx-auto font-Roboto">
-    <nav class="flex justify-between items-center px-[1.5rem] py-[2rem]">
+    <nav class="flex justify-between items-center px-[1.5rem] py-[0.5rem]">
       <ul
         id="menuList"
         class="absolute z-[100] top-0 left-0 w-[100vw] h-[100vh] bg-white flex flex-col pl-[1.5rem] pt-[4rem] gap-y-6 text-sm uppercase leading-4 tracking-widest translate-x-[-9500px]"
@@ -27,16 +27,16 @@
           <i class="fa-solid fa-x"></i>
         </div>
         <li class="relative">
-          <a class="opacity-0 animate-fade" href="#">recipes</a>
+          <a id="listItem"  class="opacity-0" href="#">recipes</a>
         </li>
         <li class="relative">
-          <a class="opacity-0 animate-fade-1" href="#">product</a>
+          <a id="listItem" class="opacity-0" href="#">product</a>
         </li>
         <li class="relative">
-          <a class="opacity-0 animate-fade-2" href="#">inspiration</a>
+          <a id="listItem" class="opacity-0" href="#">inspiration</a>
         </li>
         <li class="relative">
-          <a class="opacity-0 animate-fade-3" href="#">shop</a>
+          <a id="listItem" class="opacity-0" href="#">shop</a>
         </li>
       </ul>
       <div class="hidden lg:flex">
@@ -101,7 +101,7 @@
         </div>
       </div>
     </nav>
-    <div class="relative z-10 h-[60vh] text-center">
+    <div class="relative z-10 h-[60vh] text-center overflow-hidden custom-border-bottom">
       <div
         class="bg-black absolute top-0 left-0 opacity-[0.35] z-[-6] h-full w-full"
       ></div>

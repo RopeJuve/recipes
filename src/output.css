@@ -672,37 +672,7 @@ video {
 }
 
 .animate-fade{
-  animation: fade 0.5s linear forwards 2s;
-}
-
-@keyframes fade{
-  100%{
-    opacity: 1;
-  }
-}
-
-.animate-fade-1{
-  animation: fade 0.5s linear forwards 2.5s;
-}
-
-@keyframes fade{
-  100%{
-    opacity: 1;
-  }
-}
-
-.animate-fade-2{
-  animation: fade 0.5s linear forwards 3s;
-}
-
-@keyframes fade{
-  100%{
-    opacity: 1;
-  }
-}
-
-.animate-fade-3{
-  animation: fade 0.5s linear forwards 3.5s;
+  animation: fade 0.5s linear forwards 1.5s;
 }
 
 .cursor-pointer{
@@ -745,6 +715,10 @@ video {
 
 .gap-y-\[4\.5rem\]{
   row-gap: 4.5rem;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .text-ellipsis{
@@ -798,14 +772,14 @@ video {
   padding-right: 3rem;
 }
 
+.py-\[0\.5rem\]{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .py-\[0\.6rem\]{
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
-}
-
-.py-\[2rem\]{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .py-\[3rem\]{
@@ -934,6 +908,10 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.custom-border-bottom {
+  border-radius: 0 0 53% 47% / 0 0 10% 10%;
+}
+
 .after\:absolute::after{
   content: var(--tw-content);
   position: absolute;
@@ -1054,4 +1032,3 @@ video {
     width: 350px;
   }
 }
-
