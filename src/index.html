@@ -14,29 +14,30 @@
     />
     <script src="./index.js" defer></script>
   </head>
-  <body class="border-box max-w-7xl md:mx-auto font-Roboto">
-    <nav class="flex justify-between items-center px-[1.5rem] py-[0.5rem]">
+  <body class="border-box font-Roboto">
+    <nav class="max-w-screen-2xl md:mx-auto flex justify-between items-center px-[1.5rem] py-[0.5rem]">
       <ul
         id="menuList"
-        class="absolute z-[100] top-0 left-0 w-[100vw] h-[100vh] bg-white flex flex-col pl-[1.5rem] pt-[4rem] gap-y-6 text-sm uppercase leading-4 tracking-widest translate-x-[-9500px]"
+        class="absolute z-[100] top-0 left-0 w-[100vw] h-[100vh] bg-white flex flex-col pl-[1.5rem] pt-[4rem] gap-y-6 text-sm uppercase leading-4 tracking-widest translate-x-[-9500px] 
+              lg:top-[5.6rem] lg:border-t-2 lg:border-[gray-300] lg:w-[30%]"
       >
         <div
           id="closeBtn"
-          class="absolute right-[1.5rem] top-[1.5rem] cursor-pointer"
+          class="absolute right-[1.5rem] top-[1.5rem] cursor-pointer lg:hidden"
         >
           <i class="fa-solid fa-x"></i>
         </div>
-        <li class="relative">
-          <a id="listItem"  class="opacity-0" href="#">recipes</a>
+        <li class="relative lg:w-[50%] lg:mx-[auto]">
+          <a id="listItem"  class="opacity-0 cursor-pointer" href="#">recipes</a>
         </li>
-        <li class="relative">
-          <a id="listItem" class="opacity-0" href="#">product</a>
+        <li class="relative lg:w-[50%] lg:mx-[auto]">
+          <a id="listItem" class="opacity-0 cursor-pointer" href="#">product</a>
         </li>
-        <li class="relative">
-          <a id="listItem" class="opacity-0" href="#">inspiration</a>
+        <li class="relative lg:w-[50%] lg:mx-[auto]">
+          <a id="listItem" class="opacity-0 cursor-pointer" href="#">inspiration</a>
         </li>
-        <li class="relative">
-          <a id="listItem" class="opacity-0" href="#">shop</a>
+        <li class="relative lg:w-[50%] lg:mx-[auto]">
+          <a id="listItem" class="opacity-0 cursor-pointer" href="#">shop</a>
         </li>
       </ul>
       <div class="hidden lg:flex">
@@ -45,6 +46,7 @@
         >
           <li class="relative">
             <a
+            id="recipes"
               class="hover:font-bold hover:duration-500 transition-all ease-in-out after:content-[''] after:absolute after:bg-red-400 after:w-[0%] after:h-[1px] after:left-0 after:-bottom-[8px] hover:after:w-[100%] hover:after:duration-500"
               href="#"
               >recipes</a
@@ -85,9 +87,9 @@
         <img class="w-full h-full" src="../assets/Logo.svg" alt="Logo" />
       </div>
       <div
-        class="flex gap-x-[0.8rem] lg:w-[350px] hover:gap-x-[1rem] duration-500 transition-all ease-in-out"
+        class="flex gap-x-[0.8rem] lg:w-[350px]"
       >
-        <div class="cursor-pointer opacity-[0.75]">
+        <div class="cursor-pointer opacity-[0.75] hover:translate-x-[-5px] duration-500 transition-all ease-in-out">
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div
@@ -101,7 +103,7 @@
         </div>
       </div>
     </nav>
-    <div class="relative z-10 h-[60vh] text-center overflow-hidden custom-border-bottom">
+    <div class="relative z-10 h-[60vh] text-center overflow-hidden custom-border-bottom shadow-hero">
       <div
         class="bg-black absolute top-0 left-0 opacity-[0.35] z-[-6] h-full w-full"
       ></div>
@@ -125,7 +127,7 @@
         </div>
         <div>
           <button
-            class="bg-[#EFDBB2] px-[3rem] py-[0.6rem] rounded-[100px] border border-solid border-white tracking-widest shadow-sm uppercase"
+            class="bg-[#EFDBB2] text-[0.8rem] px-[3.5rem] py-[0.6rem] rounded-[100px] border border-solid border-white tracking-widest shadow-sm uppercase"
           >
             Discover Recipes
           </button>

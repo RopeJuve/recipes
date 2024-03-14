@@ -15,11 +15,12 @@ module.exports = {
       }
     },
     animation: {
-      fade: 'fade 0.5s linear forwards 1.5s'
+      fade: 'fade 0.5s linear forwards 0.8s'
     },
     extend: {
       boxShadow: {
-        'sm': '0 0 0 5px #EFDBB2'
+        'sm': '0 0 0 5px #EFDBB2',
+        'hero': '0 24px 0 18px #EFDBB2',
       },
     },
   },
