@@ -66,3 +66,28 @@ ingredients.addEventListener('click', () => {
     ingredientsText.classList.remove('hidden');
     preparationText.classList.add('hidden');
 });
+
+const imageSrc = {
+    small: 'https://recipesblob.oetker.de/assets/90d8d3338c9e4ed58710a111463b5709/290x400/maulwurfkuchen-qf_10926-dr-oetker.webp', // Default or small screens
+    md: 'https://recipesblob.oetker.de/assets/90d8d3338c9e4ed58710a111463b5709/1272x764/maulwurfkuchen-qf_10926-dr-oetker.webp',   // Tailwind's md breakpoint (>=768px)
+    lg: 'https://recipesblob.oetker.de/assets/90d8d3338c9e4ed58710a111463b5709/1272x764/maulwurfkuchen-qf_10926-dr-oetker.webp'     // Tailwind's lg breakpoint (>=1024px)
+  };
+  
+
+  function updateImageSrc() {
+    const screenWidth = window.innerWidth;
+    const imgElement = document.getElementById('responsiveImage');
+    
+    if(screenWidth >= 1024) { 
+      imgElement.src = imageSrc.lg;
+    } else if(screenWidth >= 768) { 
+      imgElement.src = imageSrc.md;
+    } else { 
+      imgElement.src = imageSrc.small;
+    }
+  }
+  
+
+  window.addEventListener('resize', updateImageSrc);
+ 
+  updateImageSrc();
