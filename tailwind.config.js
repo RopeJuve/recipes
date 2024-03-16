@@ -22,6 +22,9 @@ module.exports = {
         'sm': '0 0 0 5px #EFDBB2',
         'hero': '0 24px 0 18px #EFDBB2',
       },
+      backgroundColor: {
+        'light': '#fdf9f4',
+      }
     },
   },
   plugins: [],
