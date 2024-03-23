@@ -11,10 +11,17 @@ const preparation = document.getElementById('preparation');
 const preparationText = document.getElementById('preparation-text');
 const ingredientsText = document.getElementById('ingredients-text');
 const line = document.getElementById('line');
+const splitBtn = document.getElementById('splitBtn');
+const splitList = document.getElementById('split-list');
+const navList = document.querySelectorAll('.nav-list');
+const lineList = document.querySelectorAll('.line-list');
+const subMenu = document.getElementById('sub-menu-list');
 
 
 const shortDescriptionText = 'With chocolate, banana and cream, the mole cake is a real favorite and especially popular with children. The nice thing: All you need is a good recipe to successfully bring the mole cake to the (birthday) table. The basis: a classic chocolate sponge cake. Cocoa in...'
 const descriptionText = 'With chocolate, banana and cream, the mole cake is a real favorite and especially popular with children. The nice thing: All you need is a good recipe to successfully bring the mole cake to the (birthday) table. The basis: a classic chocolate sponge cake. Cocoa in combination with grated chocolate gives the mole cake its typical taste. Bananas flavored with lemon juice. And finally a sweet cream. Still missing the chocolate sprinkles on top. This is the only way to turn a simple dome cake into a real mole cake. To do this, simply spread the previously hollowed out batter crumbs on the cream.'
+
+
 menuBtn.addEventListener('click', () => {
     menuList.classList.add('translate-x-[0px]', 'transition-all', 'duration-700', 'ease-in-out');
     animateListItems.forEach((item) => {
@@ -71,6 +78,29 @@ ingredients.addEventListener('click', () => {
     ingredientsText.classList.remove('hidden');
     line.classList.remove('justify-end');
     preparationText.classList.add('hidden');
+});
+
+splitBtn.addEventListener('mouseover', () => {
+    splitList.classList.remove('hidden');
+});
+
+splitList.addEventListener('mouseleave', () => {
+    splitList.classList.add('hidden');
+});
+
+navList.forEach((item, index) => {
+    item.addEventListener('mouseover', () => {
+        console.log('hovered links')
+        lineList[index].classList.remove('hidden');
+        subMenu.classList.remove('hidden');
+        subMenu.classList.add('flex', 'flex-col', 'gap-y-6');
+    });
+});
+
+navList.forEach((item, index) => {
+    item.addEventListener('mouseleave', () => {
+        lineList[index].classList.add('hidden');
+    });
 });
 
 const imageSrc = {
