@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="!scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,7 @@
     />
     <script src="./index.js" defer></script>
   </head>
-  <body class="border-box font-Roboto">
+  <body class="border-box font-Text">
     <!-- Nav Bar -->
     <nav
       class="sticky max-w-screen-2xl md:mx-auto top-0 z-[150] flex justify-between items-center py-[0.5rem] bg-white px-[1.4rem]"
@@ -51,28 +51,28 @@
           <li class="relative">
             <a
               id="recipes"
-              class="hover:font-bold hover:duration-500 transition-all ease-in-out after:content-[''] after:absolute after:bg-red-400 after:w-[0%] after:h-[1px] after:left-0 after:-bottom-[8px] hover:after:w-[100%] hover:after:duration-500"
+              class="hover:duration-500 transition-all ease-in-out after:content-[''] after:absolute after:bg-red-400 after:w-[0%] after:h-[1px] after:left-0 after:-bottom-[8px] hover:after:w-[100%] hover:after:duration-500"
               href="#"
               >recipes</a
             >
           </li>
           <li class="relative">
             <a
-              class="hover:font-bold hover:duration-500 transition-all ease-in-out after:content-[''] after:absolute after:bg-red-400 after:w-[0%] after:h-[1px] after:left-0 after:-bottom-[8px] hover:after:w-[100%] hover:after:duration-500"
+              class="hover:duration-500 transition-all ease-in-out after:content-[''] after:absolute after:bg-red-400 after:w-[0%] after:h-[1px] after:left-0 after:-bottom-[8px] hover:after:w-[100%] hover:after:duration-500"
               href="#"
               >product</a
             >
           </li>
           <li class="relative">
             <a
-              class="hover:font-bold hover:duration-500 transition-all ease-in-out after:content-[''] after:absolute after:bg-red-400 after:w-[0%] after:h-[1px] after:left-0 after:-bottom-[8px] hover:after:w-[100%] hover:after:duration-500"
+              class="hover:duration-500 transition-all ease-in-out after:content-[''] after:absolute after:bg-red-400 after:w-[0%] after:h-[1px] after:left-0 after:-bottom-[8px] hover:after:w-[100%] hover:after:duration-500"
               href="#"
               >inspiration</a
             >
           </li>
           <li class="relative">
             <a
-              class="hover:font-bold hover:duration-500 transition-all ease-in-out after:content-[''] after:absolute after:bg-red-400 after:w-[0%] after:h-[1px] after:left-0 after:-bottom-[8px] hover:after:w-[100%] hover:after:duration-500"
+              class="hover:duration-500 transition-all ease-in-out after:content-[''] after:absolute after:bg-red-400 after:w-[0%] after:h-[1px] after:left-0 after:-bottom-[8px] hover:after:w-[100%] hover:after:duration-500"
               href="#"
               >shop</a
             >
@@ -218,7 +218,9 @@
       >
         4 [ 877 reviews ]
       </p>
-      <h1 class="text-center text-[2rem] font-Fugaz mb-[1rem] md:text-[3.5rem]">
+      <h1
+        class="text-center text-[2rem] font-Heading-bold mb-[1rem] md:text-[3.5rem]"
+      >
         Mole cake
       </h1>
       <!-- prepare -->
@@ -325,25 +327,19 @@
         class="text-center md:w-[500px] md:mx-auto lg:w-[660px] xl:w-[1090px]"
       >
         <p
-          class="mb-2 mt-[1.5rem] text-[#5A5E5A] tracking-wider md:text-[1.25rem]"
+          class="font-Text mb-2 mt-[1.5rem] text-[#5A5E5A] tracking-wider md:text-[1.25rem]"
         >
           With chocolate, cream and banana, our delicious mole cake recipe
           without gelatin is quick and easy to make.
         </p>
         <p
           id="extended-recipe"
-          class="h-[168px] text-[#5A5E5A] tracking-wider overflow-hidden text-ellipsis md:text-[1.25rem] md:h-[210px] lg:h-[120px]"
+          class="font-Text text-[#5A5E5A] tracking-wider overflow-hidden text-ellipsis md:text-[1.25rem]"
         >
-          With chocolate, banana and cream, the mole cake is a real one Favorite
-          cake and especially popular with children. The beautiful thing: It All
-          you need is a good recipe to make the mole cake a success to bring to
-          the (birthday) table. The basis: a classic one Chocolate batter. Cocoa
-          in combination with grated chocolate give the mole cake its typical
-          taste. On it with Lemon juice flavored bananas. And finally a sweet
-          one Cream. Still missing the chocolate sprinkles on top. Because
-          that's the only way A real mole cake is made from a simple dome cake.
-          For that Simply spread the previously hollowed out batter crumbs on
-          the cream.
+          With chocolate, banana and cream, the mole cake is a real favorite and
+          especially popular with children. The nice thing: All you need is a
+          good recipe to successfully bring the mole cake to the (birthday)
+          table. The basis: a classic chocolate sponge cake. Cocoa in...
         </p>
         <button
           id="read-less"
@@ -411,7 +407,7 @@
           d="M16 203C7.16344 203 0 195.837 0 187V21.351C0 21.351 143.433 -1.4836e-05 313.3 0C483.167 1.48361e-05 624 21.3511 624 21.3511V187C624 195.837 616.836 203 608 203H16Z"
         ></path>
       </svg>
-      <div>
+      <div class="md:hidden">
         <div class="stycky top-[60px] z-[9] pt-[1rem] pb-[0.063rem]">
           <div class="flex items-center pt-[1.235rem] w-full">
             <p
@@ -439,13 +435,19 @@
               Preparation
             </p>
           </div>
-          <div class="flex h-[3px] mx-[1.375rem] my-[1rem] bg-[#efdbb2]">
+          <div
+            id="line"
+            class="flex h-[3px] mx-[1.375rem] my-[1rem] bg-[#efdbb2]"
+          >
             <div class="w-[50%] h-[3px] bg-[#292b29]"></div>
           </div>
         </div>
       </div>
-      <div class="p-[1.5rem]">
-        <div id="ingredients-text">
+      <div class="p-[1.5rem] md:flex">
+        <div
+          id="ingredients-text"
+          class="md:w-[50%] md:h-[900px] md:overflow-hidden md:overflow-y-scroll md:scrollbar-thin md:scrollbar-thumb-[#E1B87F] md:scrollbar-track-transparent md:scrollbar-thumb-rounded-full"
+        >
           <h2 class="text-[28px] font-bold mb-[1.5rem]">Utils</h2>
           <div>
             <div
@@ -455,7 +457,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >4</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -464,7 +466,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >125g</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -473,7 +475,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >125g</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -482,7 +484,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >1pack</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -491,7 +493,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >4</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -500,7 +502,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >100g</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -509,7 +511,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >10g</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -518,7 +520,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >4tsp</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -527,7 +529,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >100g</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -536,7 +538,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >50g</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -550,7 +552,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >250g</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -559,7 +561,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >2tbsp</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -568,7 +570,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >600g</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -577,7 +579,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >3 packs</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -586,7 +588,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >25g</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -595,7 +597,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >1 pack</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -604,7 +606,7 @@
             </div>
             <div class="flex mb-[0.75rem]">
               <span
-                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%]"
+                class="leading-7 font-medium text-[1.4rem] text-right pr-4 w-[20%] md:text-[0.875rem]"
                 >50g</span
               >
               <p class="tracking-wide text-[.875rem] w-[80%] text-[#5a5e5a]">
@@ -628,7 +630,7 @@
                   />
                 </div>
               </div>
-              <p class=" mb-[2rem]">Dr. Oetker vanilla suger</p>
+              <p class="mb-[2rem]">Dr. Oetker vanilla suger</p>
             </a>
           </div>
           <a class="cursor-pointer" href="#">
@@ -643,7 +645,7 @@
                 />
               </div>
             </div>
-            <p class=" mb-[2rem]">Dr. Oetker cocoa</p>
+            <p class="mb-[2rem]">Dr. Oetker cocoa</p>
           </a>
           <a class="cursor-pointer" href="#">
             <div
@@ -657,7 +659,7 @@
                 />
               </div>
             </div>
-            <p class=" mb-[2rem]">Dr. Oetker Original Backing</p>
+            <p class="mb-[2rem]">Dr. Oetker Original Backing</p>
           </a>
           <a class="cursor-pointer" href="#">
             <div
@@ -671,7 +673,7 @@
                 />
               </div>
             </div>
-            <p class=" mb-[2rem]">Dr. Oetker ground almonds</p>
+            <p class="mb-[2rem]">Dr. Oetker ground almonds</p>
           </a>
           <a class="cursor-pointer" href="#">
             <div
@@ -685,7 +687,7 @@
                 />
               </div>
             </div>
-            <p class=" mb-[2rem]">Dr. Oetker shavings chocolate dark</p>
+            <p class="mb-[2rem]">Dr. Oetker shavings chocolate dark</p>
           </a>
           <a class="cursor-pointer" href="#">
             <div
@@ -699,7 +701,7 @@
                 />
               </div>
             </div>
-            <p class=" mb-[2rem]">Dr. Oetker cream stiff</p>
+            <p class="mb-[2rem]">Dr. Oetker cream stiff</p>
           </a>
           <a class="cursor-pointer" href="#">
             <div
@@ -713,7 +715,7 @@
                 />
               </div>
             </div>
-            <p class=" mb-[2rem]">Dr. Oetker vanilla suger</p>
+            <p class="mb-[2rem]">Dr. Oetker vanilla suger</p>
           </a>
           <a class="cursor-pointer" href="#">
             <div
@@ -727,10 +729,276 @@
                 />
               </div>
             </div>
-            <p class=" mb-[2rem]">Dr. Oetker shavings chocolate dark</p>
+            <p class="mb-[2rem]">Dr. Oetker shavings chocolate dark</p>
           </a>
         </div>
-        <div id="preparation-text" class="hidden">Preparation</div>
+
+        <div
+          id="preparation-text"
+          class="hidden md:w-[50%] md:block md:h-[900px] md:overflow-hidden md:overflow-y-scroll md:scrollbar-thin md:scrollbar-thumb-[#E1B87F] md:scrollbar-track-transparent md:scrollbar-thumb-rounded-full"
+        >
+          <h2 class="hidden md:block text-[28px] font-bold mb-[1.5rem]">
+            Preparation:
+          </h2>
+          <div
+            class="py-[3rem] flex items-center gap-[0.5rem] border-b border-[#e5e7eb] border-solid"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.2539 9.46875L19.0625 8.69531C19.2383 8.51953 19.2383 8.27344 19.0625 8.09766L18.4648 7.5C18.2891 7.32422 18.043 7.32422 17.8672 7.5L17.1289 8.23828C16.0391 7.25391 14.668 6.62109 13.1562 6.44531V4.6875H14.1406C14.3516 4.6875 14.5625 4.51172 14.5625 4.26562V3.42188C14.5625 3.21094 14.3516 3 14.1406 3H10.4844C10.2383 3 10.0625 3.21094 10.0625 3.42188V4.26562C10.0625 4.51172 10.2383 4.6875 10.4844 4.6875H11.4688V6.44531C7.8125 6.86719 5 9.96094 5 13.6875C5 17.7305 8.26953 21 12.3125 21C16.3203 21 19.625 17.7305 19.625 13.6875C19.625 12.1406 19.0977 10.6641 18.2539 9.46875ZM12.3125 19.3125C9.18359 19.3125 6.6875 16.8164 6.6875 13.6875C6.6875 10.5938 9.18359 8.0625 12.3125 8.0625C15.4062 8.0625 17.9375 10.5938 17.9375 13.6875C17.9375 16.8164 15.4062 19.3125 12.3125 19.3125ZM12.7344 15.375C12.9453 15.375 13.1562 15.1992 13.1562 14.9531V10.1719C13.1562 9.96094 12.9453 9.75 12.7344 9.75H11.8906C11.6445 9.75 11.4688 9.96094 11.4688 10.1719V14.9531C11.4688 15.1992 11.6445 15.375 11.8906 15.375H12.7344Z"
+                fill="#292B29"
+              ></path>
+            </svg>
+            <span class="uppercase text-[0.8rem] tracking-widest leading-none"
+              >Preparation : <span class="text-[1rem]">60 min</span></span
+            >
+            <svg
+              width="8.5"
+              height="8.5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              ></path>
+            </svg>
+            <span class="uppercase text-[0.8rem] tracking-widest leading-none"
+              >Bake : <span class="text-[1rem]">30 min</span></span
+            >
+          </div>
+          <div
+            class="font-Heading-bold text-[1.5rem] py-[1.5rem] font-[400] border-b border-[#e1b87f] border-solid"
+          >
+            <h2 class="text-[1.5rem] md:text-[2rem]">
+              How do i bake a simple mole cake?
+            </h2>
+          </div>
+          <!-- Prepare Steps -->
+          <div
+            class="flex gap-[1rem] py-[1.5rem] border-b border-[#e1b87f] border-solid"
+          >
+            <div class="w-[5rem] h-[44px] relative">
+              <svg
+                width="full"
+                height="44"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-full"
+              >
+                <circle cx="20" cy="20" r="20"></circle>
+                <path
+                  d="M34.338 17.626L34.7556 17.351L34.338 17.626L34.6337 18.0751C35.4029 19.2431 35.4029 20.7569 34.6337 21.9249L34.338 22.374C33.8046 23.1841 33.5471 24.1448 33.6041 25.1131L33.6356 25.6498C33.7177 27.0459 32.9608 28.3569 31.7107 28.9839L31.2301 29.2249C30.3631 29.6597 29.6597 30.3631 29.2249 31.2301L28.9839 31.7107C28.3569 32.9608 27.0459 33.7177 25.6498 33.6356L25.1131 33.6041C24.1448 33.5471 23.1841 33.8046 22.374 34.338L21.9249 34.6337C20.7569 35.4029 19.2431 35.4029 18.0751 34.6337L17.626 34.338L17.351 34.7556L17.626 34.338C16.8159 33.8046 15.8552 33.5471 14.8869 33.6041L14.3502 33.6356C12.9541 33.7177 11.6431 32.9608 11.0161 31.7107L10.7751 31.2301C10.3403 30.3631 9.63693 29.6597 8.7699 29.2249L8.2893 28.9839C7.03916 28.3569 6.28226 27.0459 6.36436 25.6498L6.39593 25.1131C6.45288 24.1448 6.19544 23.1841 5.66199 22.374L5.36629 21.9249C4.59711 20.7569 4.59711 19.2431 5.36629 18.0751L5.66199 17.626C6.19544 16.8159 6.45288 15.8552 6.39593 14.8869L6.36436 14.3502C6.28226 12.9541 7.03916 11.6431 8.2893 11.0161L8.7699 10.7751C9.63693 10.3403 10.3403 9.63693 10.7751 8.7699L11.0161 8.2893C11.6431 7.03916 12.9541 6.28226 14.3502 6.36436L14.8869 6.39593C15.8552 6.45288 16.8159 6.19544 17.626 5.66199L18.0751 5.36629C19.2431 4.59711 20.7569 4.59711 21.9249 5.36629L22.374 5.66199C23.1841 6.19544 24.1448 6.45288 25.1131 6.39593L25.6498 6.36436C27.0459 6.28226 28.3569 7.03916 28.9839 8.2893L29.2249 8.7699C29.6597 9.63693 30.3631 10.3403 31.2301 10.7751L31.7107 11.0161C32.9608 11.6431 33.7177 12.9541 33.6356 14.3502L33.6041 14.8869C33.5471 15.8552 33.8046 16.8159 34.338 17.626Z"
+                  stroke="#5A5E5A"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <p
+                class="absolute w-full h-full top-[1px] left-[0] flex items-center justify-center text-[1.3rem] font-bold"
+              >
+                1
+              </p>
+            </div>
+            <div class="w-[80%] flex flex-col gap-[1rem]">
+              <h2 class="font-Heading text-[1.5rem] font-bold md:text-[2rem]">
+                Prepare
+              </h2>
+              <p>Grease the bottom of the springform pan. Preheat oven.</p>
+              <div class="text-[0.8rem] font-bold">
+                <p>Top and bottom heat: around 180 °C</p>
+                <p>Hot air: around 160 °C</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex gap-[1rem] py-[1.5rem] border-b border-[#e1b87f] border-solid"
+          >
+            <div class="w-[5rem] h-[44px] relative">
+              <svg
+                width="full"
+                height="44"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-full"
+              >
+                <circle cx="20" cy="20" r="20"></circle>
+                <path
+                  d="M34.338 17.626L34.7556 17.351L34.338 17.626L34.6337 18.0751C35.4029 19.2431 35.4029 20.7569 34.6337 21.9249L34.338 22.374C33.8046 23.1841 33.5471 24.1448 33.6041 25.1131L33.6356 25.6498C33.7177 27.0459 32.9608 28.3569 31.7107 28.9839L31.2301 29.2249C30.3631 29.6597 29.6597 30.3631 29.2249 31.2301L28.9839 31.7107C28.3569 32.9608 27.0459 33.7177 25.6498 33.6356L25.1131 33.6041C24.1448 33.5471 23.1841 33.8046 22.374 34.338L21.9249 34.6337C20.7569 35.4029 19.2431 35.4029 18.0751 34.6337L17.626 34.338L17.351 34.7556L17.626 34.338C16.8159 33.8046 15.8552 33.5471 14.8869 33.6041L14.3502 33.6356C12.9541 33.7177 11.6431 32.9608 11.0161 31.7107L10.7751 31.2301C10.3403 30.3631 9.63693 29.6597 8.7699 29.2249L8.2893 28.9839C7.03916 28.3569 6.28226 27.0459 6.36436 25.6498L6.39593 25.1131C6.45288 24.1448 6.19544 23.1841 5.66199 22.374L5.36629 21.9249C4.59711 20.7569 4.59711 19.2431 5.36629 18.0751L5.66199 17.626C6.19544 16.8159 6.45288 15.8552 6.39593 14.8869L6.36436 14.3502C6.28226 12.9541 7.03916 11.6431 8.2893 11.0161L8.7699 10.7751C9.63693 10.3403 10.3403 9.63693 10.7751 8.7699L11.0161 8.2893C11.6431 7.03916 12.9541 6.28226 14.3502 6.36436L14.8869 6.39593C15.8552 6.45288 16.8159 6.19544 17.626 5.66199L18.0751 5.36629C19.2431 4.59711 20.7569 4.59711 21.9249 5.36629L22.374 5.66199C23.1841 6.19544 24.1448 6.45288 25.1131 6.39593L25.6498 6.36436C27.0459 6.28226 28.3569 7.03916 28.9839 8.2893L29.2249 8.7699C29.6597 9.63693 30.3631 10.3403 31.2301 10.7751L31.7107 11.0161C32.9608 11.6431 33.7177 12.9541 33.6356 14.3502L33.6041 14.8869C33.5471 15.8552 33.8046 16.8159 34.338 17.626Z"
+                  stroke="#5A5E5A"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <p
+                class="absolute w-full h-full top-[1px] left-[0] flex items-center justify-center text-[1.3rem] font-bold"
+              >
+                2
+              </p>
+            </div>
+            <div class="w-[80%] flex flex-col gap-[1rem]">
+              <h2 class="font-Heading text-[1.5rem] font-bold md:text-[2rem]">
+                Prepare batter
+              </h2>
+              <p>
+                Beat the egg white until very stiff. Mix the butter or margarine
+                in a mixing bowl with a mixer (mixing rods) until smooth. Add
+                sugar and vanilla sugar while stirring until a thick mixture
+                forms. Gradually stir in the egg yolks at the highest level. Mix
+                the flour with cocoa, baking powder, almonds and grated
+                chocolate and stir briefly in 2 batches at medium speed.
+                Carefully stir in the egg whites with the mixer (stirring rods)
+                briefly at medium speed. Pour the dough into the springform pan
+                and smooth it out. Place the pan on the rack in the oven.
+              </p>
+              <div class="text-[0.8rem] font-bold">
+                <p>Inset: lower third</p>
+                <p>Backing time: about 30 minutes.</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex gap-[1rem] py-[1.5rem] border-b border-[#e1b87f] border-solid"
+          >
+            <div class="w-[5rem] h-[44px] relative">
+              <svg
+                width="full"
+                height="44"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-full"
+              >
+                <circle cx="20" cy="20" r="20"></circle>
+                <path
+                  d="M34.338 17.626L34.7556 17.351L34.338 17.626L34.6337 18.0751C35.4029 19.2431 35.4029 20.7569 34.6337 21.9249L34.338 22.374C33.8046 23.1841 33.5471 24.1448 33.6041 25.1131L33.6356 25.6498C33.7177 27.0459 32.9608 28.3569 31.7107 28.9839L31.2301 29.2249C30.3631 29.6597 29.6597 30.3631 29.2249 31.2301L28.9839 31.7107C28.3569 32.9608 27.0459 33.7177 25.6498 33.6356L25.1131 33.6041C24.1448 33.5471 23.1841 33.8046 22.374 34.338L21.9249 34.6337C20.7569 35.4029 19.2431 35.4029 18.0751 34.6337L17.626 34.338L17.351 34.7556L17.626 34.338C16.8159 33.8046 15.8552 33.5471 14.8869 33.6041L14.3502 33.6356C12.9541 33.7177 11.6431 32.9608 11.0161 31.7107L10.7751 31.2301C10.3403 30.3631 9.63693 29.6597 8.7699 29.2249L8.2893 28.9839C7.03916 28.3569 6.28226 27.0459 6.36436 25.6498L6.39593 25.1131C6.45288 24.1448 6.19544 23.1841 5.66199 22.374L5.36629 21.9249C4.59711 20.7569 4.59711 19.2431 5.36629 18.0751L5.66199 17.626C6.19544 16.8159 6.45288 15.8552 6.39593 14.8869L6.36436 14.3502C6.28226 12.9541 7.03916 11.6431 8.2893 11.0161L8.7699 10.7751C9.63693 10.3403 10.3403 9.63693 10.7751 8.7699L11.0161 8.2893C11.6431 7.03916 12.9541 6.28226 14.3502 6.36436L14.8869 6.39593C15.8552 6.45288 16.8159 6.19544 17.626 5.66199L18.0751 5.36629C19.2431 4.59711 20.7569 4.59711 21.9249 5.36629L22.374 5.66199C23.1841 6.19544 24.1448 6.45288 25.1131 6.39593L25.6498 6.36436C27.0459 6.28226 28.3569 7.03916 28.9839 8.2893L29.2249 8.7699C29.6597 9.63693 30.3631 10.3403 31.2301 10.7751L31.7107 11.0161C32.9608 11.6431 33.7177 12.9541 33.6356 14.3502L33.6041 14.8869C33.5471 15.8552 33.8046 16.8159 34.338 17.626Z"
+                  stroke="#5A5E5A"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <p
+                class="absolute w-full h-full top-[1px] left-[0] flex items-center justify-center text-[1.3rem] font-bold"
+              >
+                3
+              </p>
+            </div>
+            <div class="w-[80%] flex flex-col gap-[1rem]">
+              <p>
+                Let the base stand in the mold for 10 minutes, then remove it
+                from the mold and let it cool on a cake rack.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex gap-[1rem] py-[1.5rem] border-b border-[#e1b87f] border-solid"
+          >
+            <div class="w-[5rem] h-[44px] relative">
+              <svg
+                width="full"
+                height="44"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-full"
+              >
+                <circle cx="20" cy="20" r="20"></circle>
+                <path
+                  d="M34.338 17.626L34.7556 17.351L34.338 17.626L34.6337 18.0751C35.4029 19.2431 35.4029 20.7569 34.6337 21.9249L34.338 22.374C33.8046 23.1841 33.5471 24.1448 33.6041 25.1131L33.6356 25.6498C33.7177 27.0459 32.9608 28.3569 31.7107 28.9839L31.2301 29.2249C30.3631 29.6597 29.6597 30.3631 29.2249 31.2301L28.9839 31.7107C28.3569 32.9608 27.0459 33.7177 25.6498 33.6356L25.1131 33.6041C24.1448 33.5471 23.1841 33.8046 22.374 34.338L21.9249 34.6337C20.7569 35.4029 19.2431 35.4029 18.0751 34.6337L17.626 34.338L17.351 34.7556L17.626 34.338C16.8159 33.8046 15.8552 33.5471 14.8869 33.6041L14.3502 33.6356C12.9541 33.7177 11.6431 32.9608 11.0161 31.7107L10.7751 31.2301C10.3403 30.3631 9.63693 29.6597 8.7699 29.2249L8.2893 28.9839C7.03916 28.3569 6.28226 27.0459 6.36436 25.6498L6.39593 25.1131C6.45288 24.1448 6.19544 23.1841 5.66199 22.374L5.36629 21.9249C4.59711 20.7569 4.59711 19.2431 5.36629 18.0751L5.66199 17.626C6.19544 16.8159 6.45288 15.8552 6.39593 14.8869L6.36436 14.3502C6.28226 12.9541 7.03916 11.6431 8.2893 11.0161L8.7699 10.7751C9.63693 10.3403 10.3403 9.63693 10.7751 8.7699L11.0161 8.2893C11.6431 7.03916 12.9541 6.28226 14.3502 6.36436L14.8869 6.39593C15.8552 6.45288 16.8159 6.19544 17.626 5.66199L18.0751 5.36629C19.2431 4.59711 20.7569 4.59711 21.9249 5.36629L22.374 5.66199C23.1841 6.19544 24.1448 6.45288 25.1131 6.39593L25.6498 6.36436C27.0459 6.28226 28.3569 7.03916 28.9839 8.2893L29.2249 8.7699C29.6597 9.63693 30.3631 10.3403 31.2301 10.7751L31.7107 11.0161C32.9608 11.6431 33.7177 12.9541 33.6356 14.3502L33.6041 14.8869C33.5471 15.8552 33.8046 16.8159 34.338 17.626Z"
+                  stroke="#5A5E5A"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <p
+                class="absolute w-full h-full top-[1px] left-[0] flex items-center justify-center text-[1.3rem] font-bold"
+              >
+                4
+              </p>
+            </div>
+            <div class="w-[80%] flex flex-col gap-[1rem]">
+              <p>
+                Using a tablespoon, hollow out the base to a depth of about 1
+                cm, leaving a 1-2 cm wide edge. To do this, cut the edge of the
+                surface with a knife. Crumble the leftover pastry in a bowl.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex gap-[1rem] py-[1.5rem] border-b border-[#e1b87f] border-solid"
+          >
+            <div class="w-[5rem] h-[44px] relative">
+              <svg
+                width="full"
+                height="44"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-full"
+              >
+                <circle cx="20" cy="20" r="20"></circle>
+                <path
+                  d="M34.338 17.626L34.7556 17.351L34.338 17.626L34.6337 18.0751C35.4029 19.2431 35.4029 20.7569 34.6337 21.9249L34.338 22.374C33.8046 23.1841 33.5471 24.1448 33.6041 25.1131L33.6356 25.6498C33.7177 27.0459 32.9608 28.3569 31.7107 28.9839L31.2301 29.2249C30.3631 29.6597 29.6597 30.3631 29.2249 31.2301L28.9839 31.7107C28.3569 32.9608 27.0459 33.7177 25.6498 33.6356L25.1131 33.6041C24.1448 33.5471 23.1841 33.8046 22.374 34.338L21.9249 34.6337C20.7569 35.4029 19.2431 35.4029 18.0751 34.6337L17.626 34.338L17.351 34.7556L17.626 34.338C16.8159 33.8046 15.8552 33.5471 14.8869 33.6041L14.3502 33.6356C12.9541 33.7177 11.6431 32.9608 11.0161 31.7107L10.7751 31.2301C10.3403 30.3631 9.63693 29.6597 8.7699 29.2249L8.2893 28.9839C7.03916 28.3569 6.28226 27.0459 6.36436 25.6498L6.39593 25.1131C6.45288 24.1448 6.19544 23.1841 5.66199 22.374L5.36629 21.9249C4.59711 20.7569 4.59711 19.2431 5.36629 18.0751L5.66199 17.626C6.19544 16.8159 6.45288 15.8552 6.39593 14.8869L6.36436 14.3502C6.28226 12.9541 7.03916 11.6431 8.2893 11.0161L8.7699 10.7751C9.63693 10.3403 10.3403 9.63693 10.7751 8.7699L11.0161 8.2893C11.6431 7.03916 12.9541 6.28226 14.3502 6.36436L14.8869 6.39593C15.8552 6.45288 16.8159 6.19544 17.626 5.66199L18.0751 5.36629C19.2431 4.59711 20.7569 4.59711 21.9249 5.36629L22.374 5.66199C23.1841 6.19544 24.1448 6.45288 25.1131 6.39593L25.6498 6.36436C27.0459 6.28226 28.3569 7.03916 28.9839 8.2893L29.2249 8.7699C29.6597 9.63693 30.3631 10.3403 31.2301 10.7751L31.7107 11.0161C32.9608 11.6431 33.7177 12.9541 33.6356 14.3502L33.6041 14.8869C33.5471 15.8552 33.8046 16.8159 34.338 17.626Z"
+                  stroke="#5A5E5A"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <p
+                class="absolute w-full h-full top-[1px] left-[0] flex items-center justify-center text-[1.3rem] font-bold"
+              >
+                5
+              </p>
+            </div>
+            <div class="w-[80%] flex flex-col gap-[1rem]">
+              <h2 class="font-Heading text-[1.5rem] font-bold md:text-[2rem]">
+                Prepare the banana and cream filling
+              </h2>
+              <p>
+                Peel the bananas, cut them in half lengthways, sprinkle with
+                lemon juice and place them in the hollowed out base.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex gap-[1rem] py-[1.5rem] border-b border-[#e1b87f] border-solid"
+          >
+            <div class="w-[5rem] h-[44px] relative">
+              <svg
+                width="full"
+                height="44"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-full"
+              >
+                <circle cx="20" cy="20" r="20"></circle>
+                <path
+                  d="M34.338 17.626L34.7556 17.351L34.338 17.626L34.6337 18.0751C35.4029 19.2431 35.4029 20.7569 34.6337 21.9249L34.338 22.374C33.8046 23.1841 33.5471 24.1448 33.6041 25.1131L33.6356 25.6498C33.7177 27.0459 32.9608 28.3569 31.7107 28.9839L31.2301 29.2249C30.3631 29.6597 29.6597 30.3631 29.2249 31.2301L28.9839 31.7107C28.3569 32.9608 27.0459 33.7177 25.6498 33.6356L25.1131 33.6041C24.1448 33.5471 23.1841 33.8046 22.374 34.338L21.9249 34.6337C20.7569 35.4029 19.2431 35.4029 18.0751 34.6337L17.626 34.338L17.351 34.7556L17.626 34.338C16.8159 33.8046 15.8552 33.5471 14.8869 33.6041L14.3502 33.6356C12.9541 33.7177 11.6431 32.9608 11.0161 31.7107L10.7751 31.2301C10.3403 30.3631 9.63693 29.6597 8.7699 29.2249L8.2893 28.9839C7.03916 28.3569 6.28226 27.0459 6.36436 25.6498L6.39593 25.1131C6.45288 24.1448 6.19544 23.1841 5.66199 22.374L5.36629 21.9249C4.59711 20.7569 4.59711 19.2431 5.36629 18.0751L5.66199 17.626C6.19544 16.8159 6.45288 15.8552 6.39593 14.8869L6.36436 14.3502C6.28226 12.9541 7.03916 11.6431 8.2893 11.0161L8.7699 10.7751C9.63693 10.3403 10.3403 9.63693 10.7751 8.7699L11.0161 8.2893C11.6431 7.03916 12.9541 6.28226 14.3502 6.36436L14.8869 6.39593C15.8552 6.45288 16.8159 6.19544 17.626 5.66199L18.0751 5.36629C19.2431 4.59711 20.7569 4.59711 21.9249 5.36629L22.374 5.66199C23.1841 6.19544 24.1448 6.45288 25.1131 6.39593L25.6498 6.36436C27.0459 6.28226 28.3569 7.03916 28.9839 8.2893L29.2249 8.7699C29.6597 9.63693 30.3631 10.3403 31.2301 10.7751L31.7107 11.0161C32.9608 11.6431 33.7177 12.9541 33.6356 14.3502L33.6041 14.8869C33.5471 15.8552 33.8046 16.8159 34.338 17.626Z"
+                  stroke="#5A5E5A"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <p
+                class="absolute w-full h-full top-[1px] left-[0] flex items-center justify-center text-[1.3rem] font-bold"
+              >
+                6
+              </p>
+            </div>
+            <div class="w-[80%] flex flex-col gap-[1rem]">
+              <p>
+                Beat the cream with the cream stiffener, sugar and vanilla sugar
+                until stiff, stir in the grated chocolate. Spread the cream on
+                the fruit in a dome shape and sprinkle with the pastry crumbs
+                (if necessary, press the crumbs lightly). Chill the mole cake
+                for about 1 hour.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
